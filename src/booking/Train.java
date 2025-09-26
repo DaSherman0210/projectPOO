@@ -1,13 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package booking;
-
-/**
- *
- * @author CENTIC
- */
 public class Train extends TransportService{
     private String seatType;
     private int wagonNumber;
@@ -56,3 +46,4 @@ public class Train extends TransportService{
     
     
 }
+
