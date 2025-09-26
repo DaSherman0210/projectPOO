@@ -1,7 +1,7 @@
 
 package booking;
 
-public class TransportService {
+public abstract class TransportService {
     private int id;
     private String origin;
     private String destination;
@@ -17,19 +17,19 @@ public class TransportService {
         this.setPrice(price);
     }
 
-    public void setId(int id) {
+    public final void setId(int id) {
         this.id = id;
     }
 
-    public void setOrigin(String origin) {
+    public final void setOrigin(String origin) {
         this.origin = origin;
     }
 
-    public void setDestination(String destination) {
+    public final void setDestination(String destination) {
         this.destination = destination;
     }
 
-    public void setPrice(double price) {
+    public final void setPrice(double price) {
         this.price = price;
     }
 
@@ -49,8 +49,11 @@ public class TransportService {
         return price;
     }
 
+    public abstract String getServiceInformation();
+    public abstract String getLuggageInformation();
+    
     @Override
-    public String toString() {
+    public String toString(){
         return "TransportService{" + "id=" + id + ", origin=" + origin + ", destination=" + destination + ", price=" + price + '}';
     }
     
