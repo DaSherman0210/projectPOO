@@ -8,6 +8,50 @@ package booking;
  *
  * @author CENTIC
  */
-public class Bus {
+public class Bus extends TransportService{
+    private String busCompany;
+    private String boardingPoint;
+
+    public Bus(){
+        
+    }
+    public Bus(int id,String origin,String destination,double price,String busCompany,String boardingPoint){
+        this.setId(id);
+        this.setOrigin(origin);
+        this.setDestination(destination);
+        this.setPrice(price);
+        this.setBusCompany(busCompany);
+        this.setBoardingPoint(boardingPoint);
+    }
+    
+    
+    public String getBusCompany() {
+        return busCompany;
+    }
+
+    public String getBoardingPoint() {
+        return boardingPoint;
+    }
+
+    public final void setBusCompany(String busCompany) {
+        this.busCompany = busCompany;
+    }
+
+    public final void setBoardingPoint(String boardingPoint) {
+        this.boardingPoint = boardingPoint;
+    }
+    
+    
+    @Override
+    public String getServiceInformation(){
+        String str= ("\nBus Company: "+this.getBusCompany()+"\nBoarding Point: "+this.getBoardingPoint());
+        return str;
+    }
+    
+    @Override
+    public String getLuggageInformation(){
+        String str="Luggage: ";
+        return str;
+    }
     
 }
