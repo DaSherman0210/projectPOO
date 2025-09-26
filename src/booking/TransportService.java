@@ -17,19 +17,19 @@ public class TransportService {
         this.setPrice(price);
     }
 
-    public void setId(int id) {
+    public final void setId(int id) {
         this.id = id;
     }
 
-    public void setOrigin(String origin) {
+    public final void setOrigin(String origin) {
         this.origin = origin;
     }
 
-    public void setDestination(String destination) {
+    public final void setDestination(String destination) {
         this.destination = destination;
     }
 
-    public void setPrice(double price) {
+    public final void setPrice(double price) {
         this.price = price;
     }
 
