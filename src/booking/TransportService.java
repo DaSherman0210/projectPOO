@@ -1,7 +1,7 @@
 
 package booking;
 
-public class TransportService {
+public abstract class TransportService {
     private int id;
     private String origin;
     private String destination;
@@ -49,8 +49,11 @@ public class TransportService {
         return price;
     }
 
+    public abstract String getServiceInformation();
+    public abstract String getLuggageInformation();
+    
     @Override
-    public String toString() {
+    public String toString(){
         return "TransportService{" + "id=" + id + ", origin=" + origin + ", destination=" + destination + ", price=" + price + '}';
     }
     
