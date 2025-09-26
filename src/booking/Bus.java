@@ -42,4 +42,16 @@ public class Bus extends TransportService{
     }
     
     
+    @Override
+    public String getServiceInformation(){
+        String str= ("\nBus Company: "+this.getBusCompany()+"\nBoarding Point: "+this.getBoardingPoint());
+        return str;
+    }
+    
+    @Override
+    public String getLuggageInformation(){
+        String str="Luggage: ";
+        return str;
+    }
+    
 }
