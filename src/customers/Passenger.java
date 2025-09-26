@@ -39,6 +39,7 @@ public class Passenger extends Person{
     public String toString(){
         String res = super.toString();
         res += "\n Passport number: " + this.getPasspportNumber();
+        res += this.transportService;
         return (res);
     }
     
