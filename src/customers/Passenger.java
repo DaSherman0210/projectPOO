@@ -9,17 +9,17 @@ public class Passenger extends Person{
     
     public Passenger(){
         this.passportNumber = "";
-        this.transportService = new TransportService();
+        this.transportService = null;
     }
     
     public Passenger(String name, int age, String passportNumber){
         super(name, age);
         this.setPassportNumber(passportNumber);
-        this.transportService = new TransportService();
+        this.transportService = null;
     }
     
-    public void addTransportService(int id, String origin, String destination, double price){
-        this.transportService = new TransportService(id,origin,destination,price);
+    public void addTransportService(TransportService transportService){
+        this.transportService = transportService;
     }
     
     // SETTERS
