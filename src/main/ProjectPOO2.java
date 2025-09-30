@@ -22,7 +22,9 @@ public class ProjectPOO2 {
             ps1.addTransportService(bus1);
             ps1.addTransportService(fligth1);
             ps2.addTransportService(cruiser1);
-            ps3.addTransportService(bus1);
+            ps1.addTransportService(bus1);
+            ps1.addTransportService(flight1);
+
             
             //ps1.addTransportService(12, "Sao Paulo", "Giron", 23000000);
             //ps2.addTransportService(13, "Cambagdu", "La guajira", 123300000);
