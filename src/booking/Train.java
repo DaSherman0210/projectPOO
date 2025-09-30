@@ -1,3 +1,5 @@
+package booking;
+
 public class Train extends TransportService{
     private String seatType;
     private int wagonNumber;
